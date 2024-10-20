@@ -3,9 +3,9 @@ import screenshot from '../assets/book library screenshot.png';
 
 function HeroSection() {
     return (
-        <div className="w-full flex flex-col items-center h-auto bg-gray-200 sm:flex-row sm:justify-around sm:px-24 sm:pb-16 sm:pt-16">
+        <div className="w-full flex flex-col items-center h-auto bg-gray-200 md:flex-row md:justify-around sm:px-24 sm:pb-16 sm:pt-16">
             <div className="flex flex-col items-center sm:flex sm:flex-col md:items-start">
-                <h1 className="font-semibold text-xl text-center mt-10 leading-7 sm:text-3xl sm:text-start sm:mt-0 sm:w-96" >Find some of your favourite books</h1>
+                <h1 className="font-semibold text-xl text-center mt-10 leading-7 sm:text-3xl sm:text-start sm:mt-0 md:w-96" >Find some of your favourite books</h1>
                 <p className="font-normal text-xl text-center mt-2 sm:text-xl">Delight in classics</p>
                 <button className="px-3 py-1 rounded-3xl font-medium text-l text-center text-white mt-3 bg-green-700 hover:bg-green-800 transition-all duration-300">View books</button>
             </div>

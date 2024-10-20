@@ -79,8 +79,8 @@ function Header() {
                     </li>
                 </ul>
             </nav>
-            <nav className="sm:hidden flex flex-row justify-between font-semibold px-3">
-                <img src={logo} alt="logo" />
+            <nav className="sm:hidden flex flex-row justify-between items-center font-semibold px-3">
+                <img src={logo} alt="logo" className="w-15 h-10 sm:w-0" />
                 <button
                     onClick={() => setShowMenu(!showMenu)}
                     className="sm:hidden font-bold text-xl hover:text-white-500"
@@ -88,11 +88,12 @@ function Header() {
                     {showMenu ? <GrClose /> : <GiHamburgerMenu />}
                 </button>
                 {showMenu && (
-                    <>
-                        <a href="#" className="text-white hover:text-white-800">Home</a>
-                        <a href="#" className="text-white hover:text-white-800">Login</a>
-                        <a href="#" className="text-white hover:text-white-800">Sign up</a>
-                    </>
+                    <div className="flex flex-col items-center w-full mt-4">
+                        <SearchBar placeholder="Search books..." onSearch={handleSearch} />
+                        <NavLink exact to="/" className="text-white">Home</NavLink>
+                        <button className="text-white" onClick={handleLoginClick}>Login</button>
+                        <button className="text-white" onClick={handleSignUpClick}>Sign up</button>
+                    </div>
                 )}
             </nav>
 

@@ -35,10 +35,10 @@ function BookCard() {
     };
 
     return (
-        <div className="flex flex-col max-w-full ">
+        <div className="flex flex-col flex-wrap max-w-full border-2">
             <div className="flex items-center justify-evenly h-auto w-full sm:flex-row flex-wrap mb-32 gap-11">
                 {books.map(book => (
-                    <div key={book.id} className="w-32 p-0 m-0 flex flex-col items-center sm:w-44 sm:h-auto text-center sm:mt-12 transition ease-in-out hover:scale-110 duration-300">
+                    <div key={book.id} className="w-32 mr-7 p-0 m-0 flex flex-col items-center sm:w-44 sm:h-auto text-center sm:mt-12 transition ease-in-out hover:scale-110 duration-300">
                         <button onClick={() => handleBookSelect(book.id)}> {/* Pass book ID */}
                             <img className="p-0 m-0 min-w-40 min-h-44 transition ease-in-out hover:scale-100 duration-300"
                                 src={book.volumeInfo.imageLinks?.thumbnail}
