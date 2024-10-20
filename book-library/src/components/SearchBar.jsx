@@ -19,7 +19,7 @@ const SearchBar = ({ placeholder, onSearch }) => {
                 value={query}
                 onChange={handleChange}
                 placeholder={placeholder}
-                className="w-16 sm:w-0 flex-grow px-3 py-2 focus:outline-none"
+                className="w-16 sm:w-auto flex-grow px-3 py-2 focus:outline-none"
             />
             <button type="submit" className="w-auto ml-2 bg-indigo-600 text-white px-4 py-2 rounded-md hover:bg-indigo-500">
                 Search
